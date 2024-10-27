@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> RIMS</title>
+    <link rel="stylesheet" href="../rims/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC1t8yngn9Pp4xv-aRnmpF2YOw9WJotaFU&libraries=places"></script>
+
+      
+
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar">
+        <div class="logo">
+            <img src="../images/logo-Photoroom (1)-Photoroom.png" alt="Logo">
+            <span>Roadside Instant Mechanic Service</span>
+        </div>
+        <div class="menu-toggle" id="menu-toggle">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
+        <div class="nav-links" id="nav-links">
+            <span class="close-btn" id="close-btn"></span>
+            <a href="../rims/index.html">Home</a>
+            <a href="../rims/about.html">About</a>
+            <a href="../rims/contact.html">Contact</a>
+            <button class="auth-button"><a href="http://localhost/new%20FYP/rims/signup.php" id="signupButton">Sign Up</a></button>
+            <button class="auth-button"><a href="http://localhost/new%20FYP/rims/admin_signup.php" id="adminSignupButton">Admin Signup</a></button>
+        </div>
+    </nav>
+    
+
+    <!-- main section -->
+    <section class="section">
+        <div class="left">
+            <h1>Welcome to Our Mechanic Services</h1>
+            <p>We provide top-notch roadside mechanic services. Schedule your appointment now to get quick assistance!
+            </p>
+            <!-- <a href="http://localhost/vehicle_service/" class="button-link">Send Service Request</a> -->
+            <a href="http://localhost/new%20FYP/rims/map.php" class="button-link">Explore Workshops</a>
+        </div>
+        <div class="right">
+            <img src="../images/portrait-shot-handsome-" alt="Mechanic Service">
+        </div>
+    </section>
+    <section class="three-columns">
+        <div class="column">
+            <i class="fas fa-calendar-check"></i>
+            <h3>Make an Appointment</h3>
+            <p>Choose the preffered date and time for <br> the appointment that suits you best</p>
+            <a href="#appointment" class="button-link1">Book Now</a>
+        </div>
+        <div class="column">
+            <i class="fas fa-clock"></i>
+            <h3>We are available on these dates <br>Working Hours</h3>
+            <p>Mon - Fri: 9:00 AM - 6:00 PM<br>Sat: 10:00 AM - 4:00 PM</p>
+        </div>
+        <div class="column">
+            <i class="fas fa-phone-alt"></i>
+            <h3>Call Now</h3>
+            <p>Contact us directly to get immediate assistance.</p>
+            <a href="tel:+1234567890" class="button-link1">Call Now</a>
+        </div>
+    </section>
+    <!-- packages -->
+    <section class="packages-section">
+        <h1>Our Packages</h1>
+        <div class="three-packages">
+            <div class="package">
+                <img src="../images/car.jpg" alt="Hybrid Premium Package">
+                <h3>Hybrid Premium Package</h3>
+                <p>RS: 25,000</p>
+                <ul>
+                    <li>Oil Change</li>
+                    <li>Brake Inspection</li>
+                    <li>Battery Test</li>
+                    <li>Engine Diagnostics</li>
+                    <li>Fluid Top-Off</li>
+                </ul>
+                <a href="http://localhost/new%20FYP%20/rims/submit_form.php"> <button class="auth-button"><i class="fas fa-calendar-alt"></i>Book an Appointment</button></a>
+            </div>
+            <div class="package">
+                <img src="../images/fog-automotive-service-and-repair.jpg" alt="Super Package" class="super">
+                <h3>Super Package</h3>
+                <p>RS: 18,000</p>
+                <ul>
+                    <li>Tire Rotation</li>
+                    <li>Wheel Alignment</li>
+                    <li>Air Filter Replacement</li>
+                    <li>AC Service</li>
+                    <li>Transmission Check</li>
+                </ul>
+                <a href="http://localhost/new%20FYP%20/rims/submit_form.php"> <button class="auth-button"><i class="fas fa-calendar-alt"></i>Book an Appointment</button></a>
+
+            </div>
+            <div class="package">
+                <img src="../images/Auto-Repair-.jpg" alt="Turbo Tuning Package">
+                <h3>Turbo Tuning Package</h3>
+                <p>RS: 30,000</p>
+                <ul>
+                    <li>Turbo Inspection</li>
+                    <li>Exhaust System Check</li>
+                    <li>Fuel System Cleaning</li>
+                    <li>Suspension Tuning</li>
+                    <li>Performance Tuning</li>
+                </ul>
+                <a href="http://localhost/new%20FYP%20/rims/submit_form.php"> <button class="auth-button"><i class="fas fa-calendar-alt"></i>Book an Appointment</button></a>
+            </div>
+        </div>
+    </section>
+    <!-- what we do -->
+    <section class="what-we-do-section">
+        <h1>What We Do</h1>
+        <div class="what-we-do-content">
+            <div class="left-content">
+                <p>
+                    At our mechanic shop, we offer a wide range of services to keep your vehicle running smoothly. From
+                    routine maintenance like oil changes and tire rotations to complex repairs and diagnostics, our
+                    experienced team is dedicated to providing top-notch service. We specialize in both domestic and
+                    foreign vehicles, using the latest technology to ensure your car is in the best hands. Our
+                    commitment to quality and customer satisfaction is unmatched, making us the go-to choice for all
+                    your automotive needs.
+                </p>
+            </div>
+            <div class="right-image">
+                <img src="../images/automotive-service-advisor.png" alt="Mechanic Workshop">
+            </div>
+        </div>
+    </section>
+    <!-- services -->
+    <section class="services-section">
+        <div class="services-container">
+            <div class="service-box">
+                <img src="../pages/the-benefits-of-regular-auto-repair-maintenance.jpg" alt="Auto Maintenance">
+                <h2><i class="fas fa-tools"></i> Auto Maintenance Service</h2>
+                <p>Is your engine showing signs of wear and tear? Experiencing decreased performance, excessive oil
+                    consumption, or unusual noises? Our auto maintenance service is here to address these issues and
+                    bring your engine back to life.</p>
+            </div>
+            <div class="service-box">
+                <img src="../images/is-it-time-to-replace-your-brake-pads.jpg" alt="Brake Repairs">
+                <h2><i class="fas fa-car"></i> Brake Repairs Pads & Motors</h2>
+                <p>Our auto maintenance service is here to address these issues and bring your engine back to life.</p>
+            </div>
+            <div class="service-box">
+                <img src="../images/shocks-and-struts-replacement.jpg" alt="Shocks, Struts">
+                <h2><i class="fas fa-car-crash"></i> Shocks, Struts Replacement</h2>
+                <p>We specialize in suspension diagnostics and repairs, carefully inspecting each component to identify
+                    any worn-out or damaged parts.</p>
+            </div>
+            <div class="service-box">
+                <img src="../images/featured-electrical-diag-0923-qdgsvkxhd6x8d7188qjbq3b8gbge4h0trp0504uk02.jpeg" alt="System Diagnosis">
+                <h2><i class="fas fa-diagnoses"></i> System Diagnosis & Repair</h2>
+                <p>Our technicians analyze the data to identify the specific issue and its severity.</p>
+            </div>
+            <div class="service-box">
+                <img src="../images/airconditioning-1.webp" alt="Air Conditioning">
+                <h2><i class="fas fa-wind"></i> Air Conditioning Services</h2>
+                <p>Beat the heat with our air conditioner service. From refrigerant recharges to cleaning and repairs,
+                    we've got your AC needs covered.</p>
+            </div>
+            <div class="service-box">
+                <img src="../images/images (1).jfif" alt="PPF, Wrapping">
+                <h2><i class="fas fa-paint-brush"></i> PPF, Wrapping & Detailing</h2>
+                <p>Our PPF service provides an invisible shield against scratches, rock chips, and other road debris.</p>
+            </div>
+        </div>
+    </section>
+    
+    <!-- why chhose us -->
+    <div class="why-choose-us-container">
+        <div class="why-choose-us-left">
+            <h1>Why Choose Us</h1>
+            <p>Our expert technicians, quality assurance, fast turnaround time, and transparent pricing set us apart.</p>
+            <div class="features-grid">
+                <div class="feature">
+                    <i class="fas fa-user-cog"></i> 
+                    <h2>Expert Technician</h2>
+                    <p>Our team of skilled and experienced technicians are trained to handle a wide range of car repairs. With their expertise and knowledge, you can trust that your vehicle is in capable hands.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-check-circle"></i>
+                    <h2>Quality Assurance</h2>
+                    <p>We prioritize delivering high-quality repairs and services to our customers. We use top-of-the-line equipment and genuine parts to ensure the longevity and reliability of your vehicle..</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-tachometer-alt"></i>
+                    <h2>Fast Turnaround Time</h2>
+                    <p>We understand the importance of getting you back on the road as quickly as possible. Our efficient processes and streamlined approach allow us to provide prompt and timely service without compromising on quality.</p>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-dollar-sign"></i>
+                    <h2>Transparent Pricing</h2>
+                    <p>We believe in transparency when it comes to pricing. We provide detailed and itemized quotes upfront, so you know exactly what you're paying for. There are no hidden costs or surprises when you choose our car mechanic services.</p>
+                </div>
+            </div>
+        </div>
+        <div class="why-choose-us-right">
+            <form class="contact-form">
+                <h2>Contact Us</h2>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="contact">Contact Number:</label>
+                <input type="text" id="contact" name="contact" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+                <button type="submit">Send Request</button>
+            </form>
+        </div>
+    </div>
+    <!-- testimonal -->
+    <div class="testimonial-section">
+        <h1>Our Customers Say</h1>
+        <div class="testimonial-container">
+            <div class="testimonial-slide">
+                <div class="testimonial">
+                    <p>"Excellent service! My car feels brand new."</p>
+                    <h3>Ahmed Khan</h3>
+                    <p>Faisalabad</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Very satisfied with the work done on my vehicle."</p>
+                    <h3>Sara Ali</h3>
+                    <p>Faisalabad</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Great experience, will definitely recommend."</p>
+                    <h3>Usman Iqbal</h3>
+                    <p>Faisalabad</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Quick and reliable service. Highly impressed!"</p>
+                    <h3>Ayesha Malik</h3>
+                    <p>Faisalabad</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Affordable and trustworthy, my go-to service."</p>
+                    <h3>Zainab Qureshi</h3>
+                    <p>Faisalabad</p>
+                </div>
+                <div class="testimonial">
+                    <p>"Professional staff and excellent service."</p>
+                    <h3>Ali Raza</h3>
+                    <p>Faisalabad</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer -->
+    <footer class="footer">
+        <div class="footer-logo">
+            <img src="../images/logo-Photoroom (1)-Photoroom.png" alt="Mechanic Logo">
+        </div>
+        <div class="footer-services">
+            <h3>Services</h3>
+            <ul>
+                <li>Auto Maintenance</li>
+                <li>Brake Repairs</li>
+                <li>Engine Diagnostics</li>
+                <li>Air Conditioning</li>
+                <li>PPF & Detailing</li>
+            </ul>
+        </div>
+        <div class="footer-hours">
+            <h3>Service Hours</h3>
+            <ul>
+                <li>Mon - Fri: 9:00 AM - 6:00 PM</li>
+                <li>Sat: 10:00 AM - 4:00 PM</li>
+                <li>Sun: Closed</li>
+            </ul>
+        </div>
+    </footer>
+    <!-- script -->
+    <script>
+        // Function to get query parameters
+        function getQueryParams() {
+            let params = {};
+            let queryString = window.location.search.substring(1);
+            let queryArray = queryString.split("&");
+            for (let i = 0; i < queryArray.length; i++) {
+                let pair = queryArray[i].split("=");
+                params[pair[0]] = decodeURIComponent(pair[1]);
+            }
+            return params;
+        }
+
+        // Get query parameters
+        const params = getQueryParams();
+
+        // Check if 'signup' parameter is present and is 'success'
+        if (params.signup === 'success') {
+            // Change the signup button text
+            document.getElementById('signupButton').innerHTML = 'Login';
+        }
+    </script>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>

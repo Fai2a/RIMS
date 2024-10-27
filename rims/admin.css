@@ -1,0 +1,84 @@
+/* General Styles */
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in-out;
+    width: 80%;
+    max-width: 1200px;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: left;
+    color: #333;
+}
+
+.row {
+    margin-bottom: 20px;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+.btn-block {
+    width: 100%;
+    margin-bottom: 10px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-block:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+#content {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+/* Add some margin and padding */
+.container > * {
+    margin-bottom: 20px;
+}
+
+/* Animation for content */
+@keyframes contentFadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#content {
+    animation: contentFadeIn 1s ease-in-out;
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mechanic Appointment</title>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD8hH1WsjDtPwAf1MpOwZOW9Hnma4uJFaw"></script>
+  <script src="https://unpkg.com/leaflet.gridlayer.googlemutant@0.10.0/Leaflet.GoogleMutant.js"></script>
+  <style>
+    #map {
+      width: 100%;
+      height: 900px;
+    }
+
+    .popup-content img {
+      max-width: 100%;
+      height: auto;
+    }
+
+    .rating {
+      display: flex;
+      align-items: center;
+    }
+
+    .rating span {
+      font-size: 20px;
+      color: gold;
+    }
+
+    .appointment-btn {
+      display: inline-block;
+      padding: 10px 15px;
+      margin-top: 10px;
+      background-color: #007bff;
+      color: #fff;
+      text-align: center;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Mechanic Appointment Scheduler</h1>
+  <div id="map"></div>
+</body>
+<script src="./map.js"></script>
+</html>
